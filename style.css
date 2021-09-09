@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+
+* {
+  margin: 0;
+}
+
+:root {
+  --primary-color: #5b21b6;
+  --secondary-color: #c4b5fd;
+  --primary-font: 'Federant', cursive;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  display: block;
+  background-color: #d1d5db;
+  text-align: center;
+  min-height: 100%;
+}
+
+.container > h1 {
+  text-align: center;
+  padding: 10px;
+  color: var(--primary-color);
+}
+
+.container > p {
+  text-align: justify;
+  padding: 2px 15px;
+  color: var(--primary-color);
+}
+
+.container > label {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.container > input {
+  display: block;
+  padding: 15px;
+  margin: auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  font-family: var(--primary-font);
+}
+
+.container > button {
+  justify-content: center;
+  margin: 15px auto;
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.container .change-table {
+  margin: 10px auto;
+  padding: 10px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: var(--primary-color);
+}
+
+.container > .lbl-message {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+  border: 1px solid var(--primary-color);
+  width: 35px;
+}
+
+th,
+.note-denomination {
+  background-color: var(--secondary-color);
+}
+
+.container > .lbl-message {
+  color: red;
+}

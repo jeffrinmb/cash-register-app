@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Cash Register</h1>
+      <p class="description">
+        Enter the bill amount and cash given by the customer and know the
+        minimum number of notes to return.
+      </p>
+      <label for="bill-amount" id="lbl-bill">Bill Amount:</label>
+      <input type="text" id="bill-amount" />
+      <button id="btn-next">Next</button>
+      <label for="cash-paid" class="" id="lbl-cash">Cash Given:</label>
+      <input type="text" class="" id="cash-paid" />
+      <button id="btn-check" class="">Check</button>
+      <p class="lbl-message"></p>
+      <table class="change-table">
+        <caption>
+          Change Denomination
+        </caption>
+        <tr>
+          <th>Number of Notes</th>
+          <td class="count-notes"></td>
+          <td class="count-notes"></td>
+          <td class="count-notes"></td>
+          <td class="count-notes"></td>
+          <td class="count-notes"></td>
+          <td class="count-notes"></td>
+          <td class="count-notes"></td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td class="note-denomination">2000</td>
+          <td class="note-denomination">500</td>
+          <td class="note-denomination">100</td>
+          <td class="note-denomination">20</td>
+          <td class="note-denomination">10</td>
+          <td class="note-denomination">5</td>
+          <td class="note-denomination">1</td>
+        </tr>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
