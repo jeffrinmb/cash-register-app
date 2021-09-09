@@ -67,11 +67,12 @@ body {
 }
 
 .container .change-table {
-  margin: 10px auto;
+  margin: auto;
   padding: 10px;
   border-collapse: collapse;
   border-spacing: 0;
   color: var(--primary-color);
+  width: 98%;
 }
 
 .container > .lbl-message {
@@ -81,7 +82,7 @@ body {
 th,
 td {
   padding: 20px;
-  text-align: left;
+  text-align: center;
   border: 1px solid var(--primary-color);
   width: 35px;
 }
