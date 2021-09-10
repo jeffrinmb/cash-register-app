@@ -17,6 +17,7 @@ body {
 
 body {
   font-family: var(--primary-font);
+  background-color: #d1d5db;
 }
 
 .container {

@@ -12,6 +12,7 @@ const denominationTable = document.querySelector('.change-table');
 const denominations = [2000, 500, 100, 20, 10, 5, 1];
 
 const hideMessage = () => {
+  lblMessage.style.color = 'red';
   lblMessage.innerText = '';
   lblMessage.style.display = 'none';
 };
@@ -59,6 +60,9 @@ btnCheck.addEventListener('click', () => {
     if (!validAmount(cashPaid.value, 'Cash Paid')) {
       if (Number(billAmount.value) > Number(cashPaid.value)) {
         showMessage('Wanna wash the plates! 🍽️');
+      } else if (Number(billAmount.value) === Number(cashPaid.value)) {
+        lblMessage.style.color = 'green';
+        showMessage('No change needed! 🤝🏼');
       } else {
         denominationTable.style.display = 'block';
         let balanceAmount = cashPaid.value - billAmount.value;
