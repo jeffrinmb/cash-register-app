@@ -63,6 +63,7 @@ btnCheck.addEventListener('click', () => {
       } else if (Number(billAmount.value) === Number(cashPaid.value)) {
         lblMessage.style.color = 'green';
         showMessage('No change needed! 🤝🏼');
+        denominationTable.style.display = 'none';
       } else {
         denominationTable.style.display = 'block';
         let balanceAmount = cashPaid.value - billAmount.value;
